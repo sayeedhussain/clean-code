@@ -1,11 +1,6 @@
 package com.demo.cleancode;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
@@ -37,15 +32,8 @@ public class Service {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(CleancodeApplication.class, args);
-        ArrayList intArrayList = new ArrayList(List.of(-10, 11, -12, 8));
-//		printSortedArray(intArrayList);
-//		log.info(sorted.toString());
-//		System.out.print(intArrayList);
-//		System.out.print(sorted);
-		createUser()
-        calculate(10, 15, Operation.ADD);
     }
+
     public void createUser(String username, String email) {
 
         String usernameTrim = username.trim();

@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -37,13 +36,6 @@ public class CleancodeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CleancodeApplication.class, args);
-		ArrayList intArrayList = new ArrayList(List.of(-10, 11, -12, 8));
-//		printSortedArray(intArrayList);
-//		log.info(sorted.toString());
-//		System.out.print(intArrayList);
-//		System.out.print(sorted);
-		createUser()
-//		addIdForUser(null);
 	}
 	public void createUser(String username, String email) {
 		if (!isUserDetailsValid(username, email)) {
