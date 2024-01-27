@@ -63,6 +63,8 @@ public class Service {
 
         User user = new User(username, email);
         repository.save(user);
+
+        //Username / Email validation logic is not 1 level of abstraction below the method name “createUser”.
     }
 
     public enum Operation {
