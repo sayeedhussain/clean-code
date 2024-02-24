@@ -150,13 +150,13 @@ public class CleancodeApplication {
 		//<function body> ....
 	}
 
-	public void getContent(String userId) {
+	public List<BlogPost> getContent(String userId) {
 		//<function body> ....
 
 		//Method name is too generic. What content?
 	}
 
-	public void getBlogPosts(String userId) {
+	public List<BlogPost> getBlogPosts(String userId) {
 		//<function body> ....
 
 		//Method name is specific.
@@ -177,6 +177,10 @@ public class CleancodeApplication {
 
 		//Method name conveys clearly that users will be parsed from response.
 		//Additionally return type aligns well with method name.
+	}
+
+	public class BlogPost {
+
 	}
 
 	public class Account {
